@@ -19,47 +19,103 @@
 <body>
   <header>
     <!-- Sidebar -->
-      <nav class="navbar fixed-top">
-        <div class="sidebar-botao">
-        <button class="btn btn-primary h-100 d-inline-block sidebar-botao " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi bi-list w-100 h-100"></i></button>
+    <nav class="navbar">
+      <div class="sidebar-botao">
+        <button
+          class="btn btn-outline-secondary h-100 d-inline-block sidebar-botao"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions"
+        >
+          <i class="bi bi-list"></i>
+        </button>
       </div>
-
-        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-          <div class="offcanvas-header">
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Leonardo L. Zerba</h5>
-            <i class="bi bi-person-circle icon-sidebar"></i>
-          </div>
-          <div class="offcanvas-body">
-            <p>Try scrolling the rest of the page to see this option in action.</p>
-          </div>
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+           
+          </h5>
+          
         </div>
-             <!-- Logo -->
-                    <div class="icone">
-                      <a class="navbar-brand" href="#">
-                        <img src="./img/userlmn_9a44177d4062d324c37b32b3abc1b52b.png" alt="Logo" width="60" height="51">
-                      </a>
-                    </div>
-        <!-- Pesquisa -->
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
-        </form>
-        <!-- Configs -->
-        <div class="dropdown config">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-gear-fill"></i>
-            </button>
-            <ul class="dropdown-menu">
-              <li><div class="form-check form-switch">
-                <input type="checkbox" class="form-check-input" id="checkbox" onclick="setDarkMode()">
-                <label for="checkbox" class="form-check-label">Dark mode</label>
-              </div></li>
-              <li><a class="dropdown" href="#">Português</a></li>
+        <div class="offcanvas-body">
+          <p>
+            Try scrolling the rest of the page to see this option in action.
+          </p>
+        </div>
+      </div>
+      <!-- Logo -->
+      <div class="icone">
+        <a class="navbar-brand" href="#">
+          <img
+            class="logo"
+            src="./img/bitmap.svg"
+            alt="Logo"
+            width="220"
+            height="60"
+          />
+        </a>
+      </div>
+      <!-- Pesquisa -->
+      <form class="d-flex" role="search">
+        <div class="d-none d-sm-block form-pesquisa">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Pesquisar"
+          aria-label="Search"
+        />
+      </div>
+        <button class="btn btn-outline-secondary d-flex botao-pesquisa" type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+      <!-- Perfil -->
+      <div class="icone">
+      <i class="bi bi-person-circle icon-sidebar icone-perfil">
+        <a href="#"></a></i>
+      <p class="d-md-block d-xl-block d-sm-none d-none">Login</p>
+    </div>
+      <!-- Configs -->
+      <div class="dropdown config">
+        <button
+          class="btn btn-outline-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="bi bi-gear-fill"></i>
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <div class="form-check form-switch">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="checkbox"
+                onclick="setDarkMode()"
+              />
+              <label for="checkbox" class="form-check-label"><i class="bi bi-moon"></i></label>
+            </div>
+          </li>
             </ul>
-          </div>
-        </nav>
-    </header>
+          </div></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
     <!-- jsbootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"

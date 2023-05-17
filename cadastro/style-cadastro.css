@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +32,41 @@ nav{
   background-color: rgb(41, 41, 41);
   color: azure;
 }
+/* Cor icons */
+.botao-pesquisa{
+  background-color:none;
+}
+
+.bi-gear-fill{
+  color: #E7480E;
+}
+
+.config{
+  color: #E7480E;
+}
+
+.bi-search{
+  color: #E7480E;
+}
+
+.bi-list{
+  color: #E7480E;
+  font-size: 30px;
+}
+
+.icone p{
+  color: #E7480E;
+
+}
+
+.icone-perfil{
+  font-size: 30px;
+  color: #E7480E;
+}
+
+
+.navbar .dropdown-toggle::after
+{ color:#E7480E; }
 
 /* Media query */
 @media (min-width: 600px){
@@ -42,7 +79,15 @@ nav{
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@media (max-width:720px){
+    .logo{
+      width: 160px;
+      height: 60px;
+    }
+
+}
+  
+
 
 .container {
   display: flex;
