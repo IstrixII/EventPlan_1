@@ -94,6 +94,11 @@ main{
   padding-top: 15px;
 }
 
+.cards-main{
+  padding-left: 10px;
+}
+
+
 /* css footer */
 footer{
   background-color: #4B0082;
