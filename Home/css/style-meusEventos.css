@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav{
+  flex-direction: row;
+  justify-content: start;
+}
+.burger{
+  color: black;
+}
+
+.icon-sidebar{
+  font-size: 50px;
+}
+
+.sidebar-botao {
+  background-color:  #4B0082;
+  border:none
+}
+
+nav{
+  background-image:linear-gradient(to right, rgba(75, 0, 130, 1), rgba( 255, 235, 205, 1 ));
+}
+
+/* Dark Mode */
+.darkmode{
+  background-color: rgb(41, 41, 41);
+  color: azure;
+}
+/* Cor icons */
+.botao-pesquisa{
+  background-color:none;
+}
+
+.bi-gear-fill{
+  color: #E7480E;
+}
+
+.config{
+  color: #E7480E;
+}
+
+.bi-search{
+  color: #E7480E;
+}
+
+.bi-list{
+  color: #E7480E;
+  font-size: 30px;
+}
+
+.icone p{
+  color: #E7480E;
+
+}
+
+.icone-perfil{
+  font-size: 30px;
+  color: #E7480E;
+}
+
+
+.navbar .dropdown-toggle::after
+{ color:#E7480E; }
+
+/* Media query */
+@media (min-width: 600px){
+  .sidebar-botao{
+      padding-left: 1rem;
+  }
+  .config:last-child{
+      padding-right: 4rem;
+  
+  }
+}
+
+@media (max-width:720px){
+    .logo{
+      width: 160px;
+      height: 60px;
+    }
+
+}
+  
+
+
+/* css Main */
+main{
+  padding-top: 15px;
+}
+
+.cards-main{
+  padding-left: 10px;
+}
+
+
+/* css footer */
+footer{
+  background-color: #4B0082;
+  width: 100%;
+  padding:30px;
+}
+
+.logo{
+  width:"220"
+}
+
+:link{
+  text-decoration: none;
+  color: azure;
+}
+
+a:visited{
+  color: azure;
+}
