@@ -93,12 +93,25 @@ nav {
 }
 
 /* css Main */
+.carousel{
+max-height: 20rem;
+}
+
+.carousel-item{
+ max-height: 20rem;
+}
+
 main {
-  padding-top: 15px;
+  padding-top: 0.5rem;
 }
 
 .cards-main {
-  padding-left: 10px;
+  padding-left:0.5rem;
+}
+
+.categorias-item{
+  width: 10rem;
+  height: 10rem;
 }
 
 /* css footer */
@@ -106,6 +119,7 @@ footer {
   background-color: #4b0082;
   width: 100%;
   padding: 30px;
+  color: azure;
 }
 
 .logo {
