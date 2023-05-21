@@ -36,6 +36,9 @@ nav {
   background-color: rgb(41, 41, 41);
   color: azure;
 }
+
+
+
 /* Cor icons */
 .botao-pesquisa {
   background-color: none;
@@ -93,12 +96,12 @@ nav {
 }
 
 /* css Main */
-.carousel{
-max-height: 20rem;
+.carousel {
+  max-height: 25rem;
 }
 
-.carousel-item{
- max-height: 20rem;
+.carousel-item img {
+  max-height: 25rem;
 }
 
 main {
@@ -106,20 +109,20 @@ main {
 }
 
 .cards-main {
-  padding-left:0.5rem;
+  padding-left: 0.5rem;
 }
 
-.categorias-item{
+.categorias-item {
   width: 10rem;
   height: 10rem;
 }
 
 /* css footer */
 footer {
-  background-color: #4b0082;
+  background-color: rgba(75, 0, 130, 0.5);
   width: 100%;
   padding: 30px;
-  color: azure;
+
 }
 
 .logo {
@@ -128,11 +131,12 @@ footer {
 
 :link {
   text-decoration: none;
-  color: azure;
+  color:#212529
 }
 
+
 a:visited {
-  color: azure;
+  color:#212529;
 }
 
 /* css home */
@@ -141,12 +145,16 @@ a:visited {
   padding-top: 1rem;
 }
 
-.categorias img{
-    height: 70%;
+.categorias img {
+  height: 10rem;
 }
 
-.categorias img {
-    padding-left: 1rem;
+.categorias div {
+  padding-left: 1rem;
+}
+
+.categorias p {
+  color: #e7480e;
 }
 
 .estilo {
