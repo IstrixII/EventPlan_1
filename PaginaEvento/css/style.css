@@ -104,26 +104,30 @@ nav {
 }
 
 /* css Main */
-.carousel {
-  max-height: 25rem;
-}
-
-.carousel-item img {
-  max-height: 25rem;
-}
-
 main {
   padding-top: 0.5rem;
 }
 
-.cards-main {
-  padding-left: 0.5rem;
+.compra{
+  margin-bottom: 1rem;
 }
 
-.categorias-item {
-  width: 10rem;
-  height: 10rem;
+main i{
+  font-size: 30px;
+  padding: 0.2rem;
 }
+
+main section{
+  background: rgba(231, 72, 14, 0.25);
+  padding: 1rem;
+}
+
+main>div {
+  background: rgba(231, 72, 14, 0.25);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
 
 /* css footer */
 footer {
@@ -146,32 +150,7 @@ a:visited {
   color:#212529;
 }
 
-/* css home */
-.categorias {
-  background-color: none;
-  padding-top: 1rem;
+footer a{
+  color: #212529;
 }
 
-.categorias img {
-  height: 10rem;
-}
-
-.categorias div {
-  padding-left: 1rem;
-}
-
-.categorias p {
-  color: #e7480e;
-}
-
-.estilo {
-  margin-left: 150px;
-  margin-top: 60px;
-  display: inline-block;
-}
-
-.estilograma {
-  margin-top: 5rem;
-  margin-bottom: 2rem;
-  text-align: center;
-}

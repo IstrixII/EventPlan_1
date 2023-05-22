@@ -1,99 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 * {
+  text-decoration: none;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
 
-nav{
+nav {
   flex-direction: row;
   justify-content: start;
 }
-.burger{
+.burger {
   color: black;
 }
 
-.icon-sidebar{
+.icon-sidebar {
   font-size: 50px;
 }
 
 .sidebar-botao {
-  background-color:  #4B0082;
-  border:none
+  background-color: #4b0082;
+  border: none;
 }
 
-nav{
-  background-image:linear-gradient(to right, rgba(75, 0, 130, 1), rgba( 255, 235, 205, 1 ));
+.login{
+  color: #e7480e;
+}
+
+.login:visited{
+  color: #e7480e;
+}
+
+nav {
+  background-image: linear-gradient(
+    to right,
+    rgba(75, 0, 130, 1),
+    rgba(255, 235, 205, 1)
+  );
 }
 
 /* Dark Mode */
-.darkmode{
+.darkmode {
   background-color: rgb(41, 41, 41);
   color: azure;
 }
+
+
+
 /* Cor icons */
-.botao-pesquisa{
-  background-color:none;
+.botao-pesquisa {
+  background-color: none;
 }
 
-.bi-gear-fill{
-  color: #E7480E;
+.bi-gear-fill {
+  color: #e7480e;
 }
 
-.config{
-  color: #E7480E;
+.config {
+  color: #e7480e;
 }
 
-.bi-search{
-  color: #E7480E;
+.bi-search {
+  color: #e7480e;
 }
 
-.bi-list{
-  color: #E7480E;
+.bi-list {
+  color: #e7480e;
   font-size: 30px;
 }
 
-.icone p{
-  color: #E7480E;
-
+.icone p {
+  color: #e7480e;
 }
 
-.icone-perfil{
+.icone-perfil {
   font-size: 30px;
-  color: #E7480E;
+  color: #e7480e;
 }
 
+.botao-home {
+  color: #e7480e;
+}
 
-.navbar .dropdown-toggle::after
-{ color:#E7480E; }
+.navbar .dropdown-toggle::after {
+  color: #e7480e;
+}
 
 /* Media query */
-@media (min-width: 600px){
-  .sidebar-botao{
-      padding-left: 1rem;
+@media (min-width: 600px) {
+  .sidebar-botao {
+    padding-left: 1rem;
   }
-  .config:last-child{
-      padding-right: 4rem;
-  
+  .config:last-child {
+    padding-right: 4rem;
   }
 }
 
-@media (max-width:720px){
-    .logo{
-      width: 160px;
-      height: 60px;
-    }
-
+@media (max-width: 720px) {
+  .logo {
+    width: 140px;
+    height: 60px;
+  }
 }
-  
-
 
 .container {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 85px;
+  margin-top: 50px;
+}
+
+.Logo {
+  display: flex;
+  justify-content: center;
+}
+
+.Conecte {
+  text-decoration: none;
+  color: #e7480e;
+  display: flex;
+  justify-content:center;
+  margin-top: 2%;
+  padding: 10px;
 }
 
 .card {
@@ -103,6 +130,7 @@ nav{
   box-shadow: 0px 3px 3px 3px #00000060;
   width: 400px;
   margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h1{
@@ -129,8 +157,8 @@ h1{
 .label-float{
   position: relative;
   padding-top: 13px;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .label-float input:focus{
@@ -153,7 +181,7 @@ h1{
   color: #e75722ab;
 }
 
-button{
+.botao-cadastro{
   background-color: transparent;
   border-color: #e7480e;
   color: #e7480e;
@@ -205,4 +233,8 @@ button:hover{
 
 .termos{
     font-size: 12px;
+}
+
+a{
+  text-decoration: none;
 }
