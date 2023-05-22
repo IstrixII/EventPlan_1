@@ -1,0 +1,47 @@
+/* NÃO MEXER */
+* {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .titulo {
+    text-align: center; 
+  }
+  
+  nav{
+    flex-direction: row;    
+    justify-content: start;
+  }
+
+  .burger{
+    color: black;
+  }
+  
+  .icon-sidebar{
+    font-size: 50px;
+  }
+  
+  .sidebar-botao {
+    background-color: rgb(45, 0, 54);
+    border:none
+  }
+  
+  nav{
+    background-image:linear-gradient(to right, rgb(45, 0, 54), rgb(54, 7, 87) 70%);
+  }
+  
+  /* Dark Mode */
+  .darkmode{
+    background-color: rgb(41, 41, 41);
+    color: azure;
+  }
+  
+  /* Media query */
+  @media (min-width: 600px){
+    .sidebar-botao{
+        padding-left: 1rem;
+    }
+    .config:last-child{
+        padding-right: 4rem;
+    
+    }
+  }
