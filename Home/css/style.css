@@ -105,24 +105,25 @@ nav {
 
 /* css Main */
 .carousel {
-  max-height: 25rem;
+  max-height: 33rem;
 }
 
 .carousel-item img {
-  max-height: 25rem;
-}
-
-main {
-  padding-top: 0.5rem;
+  max-height: 33rem;
 }
 
 .cards-main {
   padding-left: 0.5rem;
 }
 
-.categorias-item {
-  width: 10rem;
+.categorias div{
   height: 10rem;
+  width: 10rem;
+  margin-bottom: 3rem;
+}
+
+.categorias{
+  padding-top: 3rem;
 }
 
 /* css footer */
@@ -150,6 +151,7 @@ a:visited {
 .categorias {
   background-color: none;
   padding-top: 1rem;
+  padding-left: 4rem;
 }
 
 .categorias img {
