@@ -31,6 +31,12 @@ nav {
   );
 }
 
+
+.icone{
+  padding-left: 2rem;
+}
+
+
 /* Dark Mode */
 .darkmode {
   background-color: rgb(41, 41, 41);
