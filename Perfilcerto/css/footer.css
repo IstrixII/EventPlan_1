@@ -1,0 +1,23 @@
+footer {
+    background-color: rgba(75, 0, 130, 0.5);
+    width: 100%;
+    padding: 30px;
+  
+  }
+  
+  .logo {
+    width: "220";
+  }
+  
+  :link {
+    text-decoration: none;
+  }
+  
+  
+  a:visited {
+    color:#212529;
+  }
+  
+  footer a{
+    color: #212529;
+  }
