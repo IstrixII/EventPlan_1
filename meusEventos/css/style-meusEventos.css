@@ -27,6 +27,11 @@ nav{
   background-image:linear-gradient(to right, rgba(75, 0, 130, 1), rgba( 255, 235, 205, 1 ));
 }
 
+.icone-perfil img {
+  width: 3rem;
+}
+
+
 /* Dark Mode */
 .darkmode{
   background-color: rgb(41, 41, 41);
@@ -106,22 +111,26 @@ main{
 
 
 /* css footer */
-footer{
-  background-color: #4B0082;
+footer {
+  background-color: rgba(75, 0, 130, 0.5);
   width: 100%;
-  padding:30px;
-  color: azure;
+  padding: 30px;
+
 }
 
-.logo{
-  width:"220"
+.logo {
+  width: "220";
 }
 
-:link{
+:link {
   text-decoration: none;
-  color: azure;
 }
 
-a:visited{
-  color: azure;
+
+a:visited {
+  color:#212529;
+}
+
+footer a{
+  color: #212529;
 }
