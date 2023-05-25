@@ -115,7 +115,7 @@ nav {
 }
 
 .carousel-item img {
-  height: 33rem;
+  max-height: 33rem;
 }
 
 .cards-main {
