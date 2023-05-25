@@ -109,6 +109,20 @@ main{
   padding-left: 10px;
 }
 
+.botao-login{
+  background-color: transparent;
+  border-color: #e7480e;
+  color: #e7480e;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .2s ease-out;
+}
+
 
 /* css footer */
 footer {
