@@ -6,31 +6,9 @@
   font-family: "Roboto", sans-serif;
 }
 
-nav {
-  flex-direction: row;
-  justify-content: start;
-}
 .burger {
   color: black;
 }
-
-.icon-sidebar {
-  font-size: 50px;
-}
-
-.sidebar-botao {
-  background-color: #4b0082;
-  border: none;
-}
-
-.login{
-  color: #e7480e;
-}
-
-.login:visited{
-  color: #e7480e;
-}
-
 
 .icone{
   padding-left: 2rem;
@@ -58,39 +36,18 @@ nav {
   background-color: none;
 }
 
-.bi-gear-fill {
-  color: #e7480e;
-}
-
-.config {
-  color: #e7480e;
-}
-
-.bi-search {
-  color: #e7480e;
-}
-
-.bi-list {
+.bi-list, .icone-perfil {
   color: #e7480e;
   font-size: 30px;
 }
 
-.icone p {
+.botao-home, .icone p, .bi-search, .login:visited, .login, .categorias p {
   color: #e7480e;
 }
 
-.icone-perfil {
-  font-size: 30px;
+/* .navbar .dropdown-toggle::after { 
   color: #e7480e;
-}
-
-.botao-home {
-  color: #e7480e;
-}
-
-.navbar .dropdown-toggle::after {
-  color: #e7480e;
-}
+}*/
 
 /* Media query */
 @media (min-width: 600px) {
@@ -132,6 +89,10 @@ nav {
   padding-top: 3rem;
 }
 
+.categorias-item{
+  border-radius: 50%;
+}
+
 /* css footer */
 footer {
   background-color: rgba(75, 0, 130, 0.5);
@@ -168,17 +129,13 @@ a:visited {
   padding-left: 1rem;
 }
 
-.categorias p {
-  color: #e7480e;
-}
-
-.estilo {
+.cards-home {
   margin-left: 150px;
   margin-top: 60px;
   display: inline-block;
 }
 
-.estilograma {
+.buttonVerMais{
   margin-top: 5rem;
   margin-bottom: 2rem;
   text-align: center;
