@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>iHeart RADIO MUSIC FESTIVAL 2021</title>
     <style>
-        .fade-in {
-            opacity: 0;
-            transform: translateY(80px);
-            transition: opacity 1.5s ease-out, transform 0.5s ease-out;
-        }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(80px);
+        transition: opacity 1.5s ease-out, transform 0.5s ease-out;
+      }
 
-        .appear {
-            opacity: 1;
-            transform: translateY(0);
-        }
+      .appear {
+        opacity: 1;
+        transform: translateY(0);
+      }
     </style>
     <!-- bootstrapcss -->
     <link
@@ -25,16 +25,66 @@
       crossorigin="anonymous"
     />
     <!-- css -->
-    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- icons bootstrap -->
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-  />
-</head>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+  </head>
   <body>
     <header>
-        <nav class="navbar">
+      <nav class="navbar d-flex">
+        <!-- offcanvas -->
+        <div class="d-flex offcanvas-logo">
+          <div class="sidebar-botao">
+            <button
+              class="btn btn-outline-secondary h-100 d-inline-block sidebar-botao"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
+          <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+              <h5
+                class="offcanvas-title"
+                id="offcanvasWithBothOptionsLabel"
+              ></h5>
+            </div>
+            <div class="offcanvas-body">
+              <div class="darkmode-button">
+                <!-- darkmode -->
+                <div class="form-check form-switch">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="checkbox"
+                    onclick="setDarkMode()"
+                  />
+                  <label for="checkbox" class="form-check-label"
+                    ><i class="bi bi-moon"></i
+                  ></label>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- Logo -->
           <div class="icone">
             <a class="navbar-brand" href="../Home/index.html">
@@ -47,27 +97,20 @@
               />
             </a>
           </div>
-          <!-- Pesquisa -->
+        </div>
+        <!-- Pesquisa -->
+        <div class="d-flex pesquisa-perfil">
           <div class="pesquisa-nav">
-          <form class="d-flex" role="search">
-            <div class="d-none d-sm-block form-pesquisa">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Pesquisar"
-                aria-label="Search"
-              />
+            <div class="search-box">
+              <input type="text" class="search-input" placeholder="Pesquise Aqui">
+              <a class="search-btn" href="#">
+                <!-- Seach Icon -->
+                <i class="bi bi-search"></i>
+              </a>
             </div>
-            <button
-              class="btn btn-outline-secondary d-flex botao-pesquisa"
-              type="submit"
-            >
-              <i class="bi bi-search"></i>
-            </button>
-          </form>
           </div>
           <!-- Perfil -->
-          <div class="icone text-center">
+          <div class="icone perfil text-center">
             <a href="../Login/login.html"
               ><i class="bi bi-person-circle icon-sidebar icone-perfil"> </i
             ></a>
@@ -75,149 +118,172 @@
               <a href="../Login/login.html" class="login">Login</a>
             </p>
           </div>
-          <!-- Configs -->
-          <div class="darkmode-button">
-          <div class="form-check form-switch">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="checkbox"
-              onclick="setDarkMode()"
-            />
-            <label for="checkbox" class="form-check-label"
-              ><i class="bi bi-moon"></i
-            ></label>
-          </div>
-          </div>
-        </nav>
-      </header>
-<Main>
-    <!--sec1-->
-    <div class="container-fluid banner">
-        <div class="sec1">
-            <div class="background-image">
-                <img src="./images/DuaLipaBanner2.jpg" alt="">
-                <div class="caption">
-                    <h1 class="fade-in">iHeart RADIO MUSIC FESTIVAL 2021</h1>
-                    <p class="fade-in">Now in its thirteenth year, the annual iHeartRadio Music Festival is a two-day music festival in Las Vegas that features today's biggest names - across genres and formats</p>
-                </div>
-            </div>
         </div>
+      </nav>
+    </header>
+    <main>
+      <!--sec1-->
+      <div class="container-fluid banner">
+        <div class="sec1">
+          <div class="background-image">
+            <img src="./images/DuaLipaBanner2.jpg" alt="" />
+            <div class="caption">
+              <h1 class="fade-in">iHeart RADIO MUSIC FESTIVAL 2021</h1>
+              <p class="fade-in">
+                Now in its thirteenth year, the annual iHeartRadio Music
+                Festival is a two-day music festival in Las Vegas that features
+                today's biggest names - across genres and formats
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!--sec2-->
+      <div class="sec2">
+        <div class="artista-wrapper">
+          <div class="artista">
+            <h2 class="fade-in">LINEUP</h2>
+
+            <div class="artista-list" id="icon">
+              <div id="DuaLipa" class="artista-icon active fade-in">
+                <img src="./images/DuaLipaIcon.jpg" alt="" />
+              </div>
+              <div id="BillieEilish" class="artista-icon fade-in">
+                <img src="./images/BillieEilishIcon.jpg" alt="" />
+              </div>
+              <div id="Coldplay" class="artista-icon fade-in">
+                <img src="./images/ColdplayIcon.jpg" alt="" />
+              </div>
+              <div id="OliviaRodrigo" class="artista-icon fade-in">
+                <img src="./images/OliviaRodrigoIcon.jpg" alt="" />
+              </div>
+              <div id="TateMcRae" class="artista-icon fade-in">
+                <img src="./images/TateMcRaeIcon.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="artista-info fade-in">
+              <h6 class="artista-info-name">DUA LIPA</h6>
+              <p class="artista-info-desc">
+                Dua Lipa é uma cantora, compositora, atriz, dançarina e modelo
+                anglo-albanesa. Nascida e criada em Londres e passando parte de
+                sua adolescência, mais especificamente dos 13 aos 15 anos, em
+                Pristina, Kosovo, Lipa é evidenciada ao mundo em 2017 com o seu
+                sucesso New Rules
+              </p>
+            </div>
+          </div>
+          <!--artista-wrapper-->
+        </div>
         <!--sec2-->
-        <div class="sec2">
-            <div class="artista-wrapper">
-                <div class="artista">
-                    <h2 class="fade-in">LINEUP</h2>
-
-                    <div class="artista-list" id="icon">
-                        <div id="DuaLipa" class="artista-icon active fade-in">
-                            <img src="./images/DuaLipaIcon.jpg" alt="">
-                        </div>
-                        <div id="BillieEilish" class="artista-icon fade-in">
-                            <img src="./images/BillieEilishIcon.jpg" alt="">
-                        </div>
-                        <div id="Coldplay" class="artista-icon fade-in">
-                            <img src="./images/ColdplayIcon.jpg" alt="">
-                        </div>
-                        <div id="OliviaRodrigo" class="artista-icon fade-in">
-                            <img src="./images/OliviaRodrigoIcon.jpg" alt="">
-                        </div>
-                        <div id="TateMcRae" class="artista-icon fade-in">
-                            <img src="./images/TateMcRaeIcon.jpg" alt="">
-                        </div>
-                    </div> 
-
-                    <div class="artista-info fade-in">
-                        <h6 class="artista-info-name">DUA LIPA</h6>
-                        <p class="artista-info-desc">Dua Lipa é uma cantora, compositora, atriz, dançarina e modelo anglo-albanesa. Nascida e criada em Londres e passando parte de sua adolescência, mais especificamente dos 13 aos 15 anos, em Pristina, Kosovo, Lipa é evidenciada ao mundo em 2017 com o seu sucesso New Rules</p>
-                    </div>
-                </div><!--artista-wrapper-->
-        </div><!--sec2-->
-    </div><!--container-->
-    
+      </div>
+      <!--container-->
+    </main>
+    <footer class="text-center container-fluid">
+      <section class="row">
+        <div class="col">
+          <h4>Sobre nós</h4>
+          <p>
+            Nosso site EventPlan, surgiu de um trabalho interdiciplinar
+            elaborado por estudantes da Fatec Matão-Luiz Marchesan, com o
+            intuito de facilitar a busca por eventos e festas de uma maneira
+            muito mais facil e pratica
+          </p>
+        </div>
+        <div class="col">
+          <img src="./images/LogoBranco.png" class="logo" alt="" />
+        </div>
+        <div class="col d-flex flex-column">
+          <h4>Ajuda</h4>
+          <a href="#">Central de ajuda</a>
+          <a href="#">Compradores e participantes</a>
+          <a href="#">Produtores de eventos</a>
+        </div>
+      </section>
+      <section>
+        <p>Contatos</p>
+        <div class="contatos">
+          <i class="bi bi-facebook p-1"></i>
+          <i class="bi bi-linkedin p-1"></i>
+          <i class="bi bi-twitter p-1"></i>
+          <i class="bi bi-instagram p-1"></i>
+        </div>
+      </section>
+    </footer>
     <script src="./js/script.js"></script>
     <script>
-        const artista = {
-            "DuaLipa" : ["DuaLipaIcon", "DUA LIPA", "Dua Lipa is an Anglo-Albanian singer, songwriter, actress, dancer and model.  Born and raised in London and spending part of her adolescence, more specifically from 13 to 15 years old, in Pristina, Kosovo, Lipa is highlighted to the world in 2017 with her hit New Rules."],
-            "BillieEilish" : ["BillieEilishIcon", "BILLIE EILISH", "Billie Eilish Pirate Baird O'Connell is an American singer and songwriter. She first gained public attention in 2015 with her debut single Ocean Eyes, written and produced by her brother Finneas O'Connell, with whom she collaborates on music and live shows."],
-            "Coldplay" : ["ColdplayIcon", "COLDPLAY", "Coldplay are a British rock band formed in London in 1997. They consist of vocalist and pianist Chris Martin, guitarist Jonny Buckland, bassist Guy Berryman, drummer Will Champion and creative director Phil Harvey."],
-            "OliviaRodrigo" : ["OliviaRodrigoIcon", "OLIVIA RODRIGO", "Olivia Isabel Rodrigo is an American singer-songwriter and actress. She gained recognition in the late 2010s with her lead roles on the Disney television programs Bizaardvark and High School Musical: The Musical: The Series. "],
-            "TateMcRae" : ["TateMcRaeIcon", "TATE MCRAE", "Tate Rosner McRae is a Canadian singer, songwriter, dancer and actress. At the age of thirteen, she gained prominence as the first Canadian finalist on the American reality TV show So You Think You Can Dance."]
+      const artista = {
+        DuaLipa: [
+          "DuaLipaIcon",
+          "DUA LIPA",
+          "Dua Lipa is an Anglo-Albanian singer, songwriter, actress, dancer and model.  Born and raised in London and spending part of her adolescence, more specifically from 13 to 15 years old, in Pristina, Kosovo, Lipa is highlighted to the world in 2017 with her hit New Rules.",
+        ],
+        BillieEilish: [
+          "BillieEilishIcon",
+          "BILLIE EILISH",
+          "Billie Eilish Pirate Baird O'Connell is an American singer and songwriter. She first gained public attention in 2015 with her debut single Ocean Eyes, written and produced by her brother Finneas O'Connell, with whom she collaborates on music and live shows.",
+        ],
+        Coldplay: [
+          "ColdplayIcon",
+          "COLDPLAY",
+          "Coldplay are a British rock band formed in London in 1997. They consist of vocalist and pianist Chris Martin, guitarist Jonny Buckland, bassist Guy Berryman, drummer Will Champion and creative director Phil Harvey.",
+        ],
+        OliviaRodrigo: [
+          "OliviaRodrigoIcon",
+          "OLIVIA RODRIGO",
+          "Olivia Isabel Rodrigo is an American singer-songwriter and actress. She gained recognition in the late 2010s with her lead roles on the Disney television programs Bizaardvark and High School Musical: The Musical: The Series. ",
+        ],
+        TateMcRae: [
+          "TateMcRaeIcon",
+          "TATE MCRAE",
+          "Tate Rosner McRae is a Canadian singer, songwriter, dancer and actress. At the age of thirteen, she gained prominence as the first Canadian finalist on the American reality TV show So You Think You Can Dance.",
+        ],
+      };
+
+      document.querySelectorAll(".artista-icon").forEach((e) => {
+        e.addEventListener("click", () => {
+          document.querySelectorAll(".artista-icon").forEach((ele) => {
+            ele.classList.remove("active");
+          });
+
+          e.classList.add("active");
+
+          document.getElementById("icon").style = "opacity: 0";
+          document.querySelector(".artista-info").style = "opacity: 0";
+
+          setTimeout(() => {
+            document.getElementById("icon").src =
+              "./images/" + artista[e.id][0] + ".jpg";
+            document.querySelector(".artista-info-name").innerHTML =
+              artista[e.id][1];
+            document.querySelector(".artista-info-desc").innerHTML =
+              artista[e.id][2];
+
+            document.getElementById("icon").style = "opacity: 1";
+            document.querySelector(".artista-info").style = "opacity: 1";
+          }, 0);
+        });
+      });
+
+      const fadeElements = document.querySelectorAll(".fade-in");
+
+      function checkFadeElements() {
+        for (let i = 0; i < fadeElements.length; i++) {
+          const element = fadeElements[i];
+          const elementTop = element.getBoundingClientRect().top;
+
+          if (elementTop < window.innerHeight) {
+            element.classList.add("appear");
+          }
         }
+      }
 
-        document.querySelectorAll(".artista-icon").forEach((e) => {
-            e.addEventListener("click", () => {
-                document.querySelectorAll(".artista-icon").forEach((ele) => {
-                    ele.classList.remove("active");
-                })
+      window.addEventListener("scroll", checkFadeElements);
+      window.addEventListener("resize", checkFadeElements);
 
-                e.classList.add("active");
-
-                document.getElementById("icon").style = "opacity: 0";
-                document.querySelector(".artista-info").style = "opacity: 0";
-
-                setTimeout(() => {
-                    document.getElementById("icon").src = "./images/" + artista[e.id][0] + ".jpg";
-                    document.querySelector(".artista-info-name").innerHTML = artista[e.id][1];
-                    document.querySelector(".artista-info-desc").innerHTML = artista[e.id][2];
-
-                    document.getElementById("icon").style = "opacity: 1";
-                    document.querySelector(".artista-info").style = "opacity: 1";
-                    }, 0);
-            })
-        })
-
-        const fadeElements = document.querySelectorAll(".fade-in");
-
-        function checkFadeElements() {
-            for (let i = 0; i < fadeElements.length; i++) {
-                const element = fadeElements[i];
-                const elementTop = element.getBoundingClientRect().top;
-
-                if (elementTop < window.innerHeight) {
-                    element.classList.add("appear");
-                }
-            }
-        }
-
-        window.addEventListener("scroll", checkFadeElements);
-        window.addEventListener("resize", checkFadeElements);
-
-        checkFadeElements();
+      checkFadeElements();
     </script>
-    </Main>
-    <footer class="text-center container-fluid">
-        <section class="row">
-          <div class="col">
-            <h4>Sobre nós</h4>
-            <p>
-              Nosso site EventPlan, surgiu de um trabalho interdiciplinar
-              elaborado por estudantes da Fatec Matão-Luiz Marchesan, com o
-              intuito de facilitar a busca por eventos e festas de uma maneira
-              muito mais facil e pratica
-            </p>
-          </div>
-          <div class="col">
-            <img src="./images/LogoBranco.png" class="logo" alt="" />
-          </div>
-          <div class="col d-flex flex-column">
-            <h4>Ajuda</h4>
-            <a href="#">Central de ajuda</a>
-            <a href="#">Compradores e participantes</a>
-            <a href="#">Produtores de eventos</a>
-          </div>
-        </section>
-        <section>
-          <p>Contatos</p>
-          <div class="contatos">
-            <i class="bi bi-facebook p-1" ></i>
-            <i class="bi bi-linkedin p-1"></i>
-            <i class="bi bi-twitter p-1"></i>
-            <i class="bi bi-instagram p-1"></i>
-          </div>
-        </section>
-      </footer>
     <!-- js bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
