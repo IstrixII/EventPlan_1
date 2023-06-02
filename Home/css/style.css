@@ -177,35 +177,11 @@ nav {
   padding-left: 0.5rem;
 }
 
-.categorias div{
-  height: 10rem;
-  width: 10rem;
-  margin-bottom: 3rem;
-}
-
-.categorias{
-  padding-top: 3rem;
-}
-
-.categorias-item{
-  border-radius: 50%;
+main{
+  width: 100%;
 }
 
 /* css home */
-.categorias {
-  background-color: none;
-  padding-top: 1rem;
-  padding-left: 4rem;
-}
-
-.categorias img {
-  height: 10rem;
-}
-
-.categorias div {
-  padding-left: 1rem;
-}
-
 .cards-home {
   margin-left: 150px;
   margin-top: 60px;

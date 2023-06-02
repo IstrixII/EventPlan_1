@@ -26,65 +26,107 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <!--  -->
-        <!-- Logo -->
-        <div class="icone">
-          <a class="navbar-brand" href="#">
-            <img
-              src="./img/LogoBranco.png"
-              class="logo"
-              alt="Logo"
-              width="220"
-              height="51"
-            />
-          </a>
+      <nav class="navbar d-flex">
+        <!-- offcanvas -->
+        <div class="d-flex offcanvas-logo">
+          <div class="sidebar-botao">
+            <button
+              class="btn btn-outline-secondary h-100 d-inline-block sidebar-botao"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
+          <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+              <h5
+                class="offcanvas-title"
+                id="offcanvasWithBothOptionsLabel"
+              ></h5>
+            </div>
+            <div class="offcanvas-body">
+              <div class="darkmode-button">
+                <!-- darkmode -->
+                <div class="form-check form-switch">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="checkbox"
+                    onclick="setDarkMode()"
+                  />
+                  <label for="checkbox" class="form-check-label"
+                    ><i class="bi bi-moon"></i
+                  ></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Logo -->
+          <div class="icone">
+            <a class="navbar-brand" href="../Home/index.html">
+              <img
+                src="./img/LogoBranco.png"
+                class="logo"
+                alt="Logo"
+                width="176"
+                height="41"
+              />
+            </a>
+          </div>
         </div>
         <!-- Pesquisa -->
-        <form class="d-flex" role="search">
-          <div class="d-none d-sm-block form-pesquisa">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Pesquisar"
-              aria-label="Search"
-            />
+        <div class="d-flex pesquisa-perfil">
+          <div class="pesquisa-nav">
+            <div class="search-box">
+              <input type="text" class="search-input" placeholder="Pesquise Aqui">
+              <a class="search-btn" href="#">
+                <!-- Seach Icon -->
+                <i class="bi bi-search"></i>
+              </a>
+            </div>
           </div>
-          <button
-            class="btn btn-outline-secondary d-flex botao-pesquisa"
-            type="submit"
-          >
-            <i class="bi bi-search"></i>
-          </button>
-        </form>
-        <!-- Perfil -->
-        <div class="icone text-center">
-          <a href="../Login/login.html"
-            ><i class="bi bi-person-circle icon-sidebar icone-perfil"> </i
-          ></a>
-          <p class="d-md-block d-xl-block d-sm-none d-none">
-            <a href="../Login/login.html" class="login">Login</a>
-          </p>
-        </div>
-        <!-- Configs -->
-        <div class="form-check form-switch">
-          <input
-            type="checkbox"
-            class="form-check-input"
-            id="checkbox"
-            onclick="setDarkMode()"
-          />
-          <label for="checkbox" class="form-check-label"
-            ><i class="bi bi-moon"></i
-          ></label>
+          <!-- Perfil -->
+          <div class="icone perfil text-center">
+            <a href="../Login/login.html"
+              ><i class="bi bi-person-circle icon-sidebar icone-perfil"> </i
+            ></a>
+            <p class="d-md-block d-xl-block d-sm-none d-none">
+              <a href="../Login/login.html" class="login">Login</a>
+            </p>
+          </div>
         </div>
       </nav>
     </header>
     <!-- Filtro -->
-    <div>
-
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Filtro
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+          </div>
+        </div>
+      </div>
     </div>
-    
+
     <!-- Eventos -->
     <main class="container-fluid">
       <div class="card mb-3 cards-home" style="max-width: 540px">
@@ -115,18 +157,22 @@
         <div class="row g-0">
           <div class="col-md-4">
             <a href="../Evento/index.html">
-            <img
-              src="./img/9149fe676ac861b5dc5b4a91e05c2725.jpg"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-        </a>
+              <img
+                src="./img/9149fe676ac861b5dc5b4a91e05c2725.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </a>
           </div>
           <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title"><a href="../Evento/index.html">iHeart RADIO MUSIC FESTIVAL 2021</h5>
+            <div class="card-body evento">
+              <a href="../Evento/index.html"
+                ><h5 class="card-title">iHeart RADIO MUSIC FESTIVAL 2021</h5></a
+              >
               <p class="card-text">
-                Now in its thirteenth year, the annual iHeartRadio Music Festival is a two-day music festival in Las Vegas that features today's biggest names - across genres and formats...
+                Now in its thirteenth year, the annual iHeartRadio Music
+                Festival is a two-day music festival in Las Vegas that features
+                today's biggest names - across genres and formats...
               </p>
             </div>
           </div>
@@ -146,9 +192,7 @@
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">
-                <a href="../PaginaEvento/paginaEvento.html"
-                  >ROBERTO CARLOS - BALNEÁRIO CAMBORIÚ</a
-                >
+                  ROBERTO CARLOS - BALNEÁRIO CAMBORIÚ
               </h5>
               <p class="card-text">
                 Roberto Carlos faz show em Balneário de Camboriú e presenteia os
@@ -232,12 +276,6 @@
           </div>
         </div>
       </div>
-
-      <div class="buttonVerMais">
-        <button type="button" class="btn btn-outline-dark botao-home">
-          Ver todos
-        </button>
-      </div>
     </main>
     <!-- Footer -->
     <footer class="text-center container-fluid">
@@ -252,7 +290,7 @@
           </p>
         </div>
         <div class="col">
-          <img src="." class="logo" alt="" />
+          <img src="./img/LogoBranco.png" class="logo" alt="" />
         </div>
         <div class="col d-flex flex-column">
           <h4>Ajuda</h4>

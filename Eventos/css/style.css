@@ -6,16 +6,114 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.burger {
+  color: black;
+}
+
+.offcanvas-logo{
+  padding-bottom: 10px;
+}
+
+.sidebar-botao{
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.bi-list{
+  margin-right: 4px;
+}
+
+/* search */
+/* div */
+.search-box {
+  top: 50%;
+  left: 50%;
+  height: 40px;
+  border-radius: 50px;
+  padding: 10px;
+}
+/* input */
+.search-input {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  width: 0;
+  padding: 0;
+  color: #000;
+  float: left;
+  font-size: 16px;
+  transition: .3s;
+  line-height: 40px;
+  border-radius: 10px;
+}
+.search-input::placeholder {
+  color: #dbc5b0;
+}
+/* icon */
+.search-btn {
+  color: #fff;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: .3s;
+}
+.search-input:focus,
+.search-input:not(:placeholder-shown) {
+  width: 240px;
+  padding: 0 6px;
+}
+.search-box:hover > .search-input {
+  width: 240px;
+  padding: 0 6px;
+}
+.search-box:hover > .search-btn,
+.search-input:focus + .search-btn,
+.search-input:not(:placeholder-shown) + .search-btn {
+  
+  color: #cd595a;
+}
+
+.pesquisa-nav{
+  align-items: center;
+}
+
+.pesquisa-perfil{
+  align-items: center;
+}
+
+.icon-sidebar {
+  font-size: 50px;
+}
+
 .icone {
   padding-left: 2rem;
 }
 
+header {
+  height: 70px;
+}
+
 nav {
-  background-image: linear-gradient(
-    to right,
-    rgba(75, 0, 130, 1),
-    rgba(255, 235, 205, 1)
-  );
+  background-color: #0d0013;
+  margin-bottom: 10px;
+}
+
+.perfil {
+  padding-right: 1rem;
+}
+
+/* search */
+.pesquisa-nav {
+  margin-bottom: 16px;
+}
+
+.evento a{
+  color: #000;
 }
 
 /* Dark Mode */
@@ -27,12 +125,13 @@ nav {
 /* Cor icons */
 .botao-pesquisa {
   background-color: none;
+  margin-left: 10px;
 }
 
 .bi-list,
 .icone-perfil {
-  color: #e7480e;
-  font-size: 30px;
+  color: #e0e2ab;
+  font-size: 20px;
 }
 
 .botao-home,
@@ -41,7 +140,7 @@ nav {
 .login:visited,
 .login,
 .categorias p {
-  color: #e7480e;
+  color: #e0e2ab;
 }
 
 /* .navbar .dropdown-toggle::after { 
@@ -66,6 +165,11 @@ nav {
 }
 
 /* css Main */
+.accordion {
+  margin: 0 120px 0 160px;
+  padding-top: 30px;
+}
+
 .cards-main {
   padding-left: 0.5rem;
 }
@@ -84,10 +188,10 @@ nav {
 
 /* css footer */
 footer {
-  background-color: rgba(75, 0, 130);
+  background-color: #0d0013;
   width: 100%;
   padding: 30px;
-  color: #ffffff;
+  color: #e0e2ab;
 }
 
 .logo {
@@ -98,14 +202,10 @@ footer {
   text-decoration: none;
 }
 
-footer a:visited {
+a:visited {
   color: azure;
 }
 
 .contatos i {
   font-size: 2rem;
-}
-
-a:visited{
-  color: #0d0013;
 }
