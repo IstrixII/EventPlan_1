@@ -75,7 +75,7 @@
 .search-input:focus + .search-btn,
 .search-input:not(:placeholder-shown) + .search-btn {
   
-  color: #cd595a;
+  color: #e7480e;
 }
 
 .pesquisa-nav{
@@ -175,21 +175,27 @@ nav {
 }
 
 .card {
-  background-color: #ffb77c;
+  background-color: #ffffff80;
   padding: 30px;
-  border-radius: 5%;
+  border-radius: 4%;
   box-shadow: 0px 3px 3px 3px #00000060;
-  width: 500px;
+  width: 400px;
   margin-bottom: 20px;
   margin-top: 40px;
 }
 
-.label-float .Esqueceu {
-  margin-top: 8px;
-  color: #1b1b1b;
+.Esqueceu {
+  text-decoration: none;
+  color: #e7480e;
   display: flex;
   justify-content:end 
   
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e7480e;
 }
 
 .label-float input{
@@ -197,7 +203,7 @@ nav {
   padding: 5px 5px;
   display: inline-block;
   border: 0;
-  border-bottom: 2px solid #2e2e2e;
+  border-bottom: 2px solid #e7480e;
   background-color: transparent;
   outline: none;
   min-width: 180px;
@@ -215,11 +221,11 @@ nav {
 }
 
 .label-float input:focus{
-  border-bottom: 2px solid #1b1b1b;
+  border-bottom: 2px solid #e75722ab;
 }
 
 .label-float label{
-  color: #1b1b1b;
+  color: #e7480e;
   position: absolute;
   top: 0;
   left: 0;
@@ -231,13 +237,13 @@ nav {
 .label-float input:valid + label{
   font-size: 13px;
   margin-top: 0;
-  color: #1b1b1b;
+  color: #e75722ab;
 }
 
 .botao-login{
   background-color: transparent;
-  border-color: #1b1b1b;
-  color: #1b1b1b;
+  border-color: #e7480e;
+  color: #e7480e;
   padding: 7px;
   font-weight: bold;
   font-size: 12pt;
@@ -246,13 +252,12 @@ nav {
   cursor: pointer;
   outline: none;
   transition: all .2s ease-out;
-  color: #000;
 }
 
 .botao-cadastro{
   background-color: transparent;
-  border-color: #1b1b1b;
-  color: #1b1b1b;
+  border-color: #e7480e;
+  color: #e7480e;
   padding: 7px;
   font-weight: bold;
   font-size: 12pt;
@@ -261,15 +266,11 @@ nav {
   cursor: pointer;
   outline: none;
   transition: all .2s ease-out;
-  color: #000;
-}
-
-.botao-debarro{
-  color: #000;
 }
 
 button:hover{
-  background-color: #2e2e2e;
+  background-color: #e7480e;
+  color: #000000;
 }
 
 .justify-center{
@@ -312,7 +313,7 @@ a{
   color: #e7480e;
 }
 
- /*css footer*/
+
 footer {
   background-color: #0d0013;
   width: 100%;
@@ -324,11 +325,16 @@ footer {
   width: "220";
 }
 
+.login-logo{
+  width: 400px;
+  padding-right: 24px;
+}
+
 :link {
   text-decoration: none;
 }
 
-a:visited {
+footer a:visited {
   color: azure;
 }
 

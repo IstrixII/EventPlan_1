@@ -93,7 +93,11 @@
         <div class="d-flex pesquisa-perfil">
           <div class="pesquisa-nav">
             <div class="search-box">
-              <input type="text" class="search-input" placeholder="Pesquise Aqui">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Pesquise Aqui"
+              />
               <a class="search-btn" href="#">
                 <!-- Seach Icon -->
                 <i class="bi bi-search"></i>
@@ -113,16 +117,62 @@
       </nav>
     </header>
     <!-- Filtro -->
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    <div class="accordion">
+ 
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-controls="collapseOne"
+          >
             Filtro
           </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-          </div>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body d-flex">
+            <div class="text-center">
+              <h3>Faixa de preço</h3>
+              <p>Abaixo de R$100</p>
+              <p>R$100 - R$200</p>
+              <p>R$200 - R$500</p>
+              <p>Acima de R$500</p>
+              <form action="">
+              <input type="text" class="preco" placeholder="Minímo">
+              <span>-</span>
+              <input type="text" class="preco" placeholder="Máximo">
+            </form>
+            </div>
+            <div class="text-center">
+              <h3>Data do evento</h3>
+              <p>Todas as datas</p>
+              <p>Hoje</p>
+              <p>Próximos 7 dias</p>
+              <p>Próximos 30 dias</p>
+              <p>Próximos 3 meses</p>
+              <h3>Região</h3>
+              <p><i class="bi bi-pin-map-fill"></i>Proximo de mim</p>
+            </div>
+            <div class="text-center">
+              <h3>Classificação etária</h3>
+              <p>Todas idades</p>
+              <p>Infantil</p>
+              <p>12 anos ou mais</p>
+              <p>18 anos ou mais</p>
+            </div>
+            <div class="text-center">
+              <h3>Categorias</h3>
+              <p>Comédia</p>
+              <p>Culturais</p>
+              <p>Cursos e Palestras</p>
+              <p>Esporte</p>
+              <p>Festas</p>
+              <p>Gastronomia</p>
+              <p>Infantil</p>
+            </div>
         </div>
       </div>
     </div>
@@ -191,9 +241,7 @@
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">
-                  ROBERTO CARLOS - BALNEÁRIO CAMBORIÚ
-              </h5>
+              <h5 class="card-title">ROBERTO CARLOS - BALNEÁRIO CAMBORIÚ</h5>
               <p class="card-text">
                 Roberto Carlos faz show em Balneário de Camboriú e presenteia os
                 fãs com uma noite inesquecível, em Balneário Camboriú, no dia 12

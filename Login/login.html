@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <!-- bootstrapcss -->
     <link
@@ -21,172 +21,180 @@
     />
   </head>
   <body>
-    <nav class="navbar d-flex">
-      <!-- offcanvas -->
-      <div class="d-flex offcanvas-logo">
-        <div class="sidebar-botao">
-          <button
-            class="btn btn-outline-secondary h-100 d-inline-block sidebar-botao"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions"
-            aria-controls="offcanvasWithBothOptions"
-          >
-            <i class="bi bi-list"></i>
-          </button>
-        </div>
-        <div
-          class="offcanvas offcanvas-start"
-          data-bs-scroll="true"
-          tabindex="-1"
-          id="offcanvasWithBothOptions"
-          aria-labelledby="offcanvasWithBothOptionsLabel"
-        >
-          <div class="offcanvas-header">
+    <header>
+      <nav class="navbar d-flex">
+        <!-- offcanvas -->
+        <div class="d-flex offcanvas-logo">
+          <div class="sidebar-botao">
             <button
+              class="btn btn-outline-secondary h-100 d-inline-block sidebar-botao"
               type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-            <h5
-              class="offcanvas-title"
-              id="offcanvasWithBothOptionsLabel"
-            ></h5>
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions"
+            >
+              <i class="bi bi-list"></i>
+            </button>
           </div>
-          <div class="offcanvas-body">
-            <div class="darkmode-button">
-              <!-- darkmode -->
-              <div class="form-check form-switch">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="checkbox"
-                  onclick="setDarkMode()"
-                />
-                <label for="checkbox" class="form-check-label"
-                  ><i class="bi bi-moon"></i
-                ></label>
+          <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+              <h5
+                class="offcanvas-title"
+                id="offcanvasWithBothOptionsLabel"
+              ></h5>
+            </div>
+            <div class="offcanvas-body">
+              <div class="darkmode-button">
+                <!-- darkmode -->
+                <div class="form-check form-switch">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="checkbox"
+                    onclick="setDarkMode()"
+                  />
+                  <label for="checkbox" class="form-check-label"
+                    ><i class="bi bi-moon"></i
+                  ></label>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Logo -->
-        <div class="icone">
-          <a class="navbar-brand" href="../Login/login.html">
-            <img
-              src="./img/LogoBranco.png"
-              class="logo"
-              alt="Logo"
-              width="176"
-              height="41"
-            />
-          </a>
-        </div>
-      </div>
-      <!-- Pesquisa -->
-      <div class="d-flex pesquisa-perfil">
-        <div class="pesquisa-nav">
-          <div class="search-box">
-            <input type="text" class="search-input" placeholder="Pesquise Aqui">
-            <a class="search-btn" href="#">
-              <!-- Seach Icon -->
-              <i class="bi bi-search"></i>
+          <!-- Logo -->
+          <div class="icone">
+            <a class="navbar-brand" href="../Login/login.html">
+              <img
+                src="./img/LogoBranco.png"
+                class="logo"
+                alt="Logo"
+                width="176"
+                height="41"
+              />
             </a>
           </div>
         </div>
-        <!-- Perfil -->
-        <div class="icone perfil text-center">
-          <a href="../Login/login.html"
-            ><i class="bi bi-person-circle icon-sidebar icone-perfil"> </i
-          ></a>
-          <p class="d-md-block d-xl-block d-sm-none d-none">
-            <a href="../Login/login.html" class="login">Login</a>
-          </p>
-        </div>
-      </div>
-    </nav>
-  </header>
-      <main>
-        <div class='container'>
-            <div class='card'>
-               <div class="Logo">
-                  <a href="../Home/index.html"> <img src="img/LogoBranco.png" alt="EventPlan"></a>
+        <!-- Pesquisa -->
+        <div class="d-flex pesquisa-perfil">
+          <div class="pesquisa-nav">
+            <div class="search-box">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Pesquise Aqui"
+              />
+              <a class="search-btn" href="#">
+                <!-- Seach Icon -->
+                <i class="bi bi-search"></i>
+              </a>
             </div>
-              <ul>
-        </ul>
-              
-              <div id='msgError'></div>
-              <div id='msgSuccess'></div>
-
-                      <div class="label-float">
-                         <input type="text" id="email" placeholder=" " required >
-                         <label id="labelEmail" for="email">Email</label>
-                     </div>
-
-                      <div class="label-float">
-                         <input type="password" id="senha" placeholder=" " required>
-                         <label id="labelSenha" for="senha">Senha</label>
-                         <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
-                         <a class="Esqueceu" href="#" tabindex="0">Esqueceu a senha?</a>
-                         
-                      </div>
-                      <div class='justify-center'>
-                         <button class="botao-login"><a href="../Perfil/Perfil.html"> Login </a></button>
-                      </div>
-
-                      <div class='justify-center'>
-                        <button class="botao-cadastro"><a href="../cadastro/cadastro.html"><div class="botao-debarro">Cadastre-se</div></a></button>   
-                     </div>
-            </div>
-            </div>
-      </main>
-      <footer class="text-center container-fluid">
-        <section class="row">
-          <div class="col">
-            <h4>Sobre nós</h4>
-            <p>
-              Nosso site EventPlan, surgiu de um trabalho interdiciplinar
-              elaborado por estudantes da Fatec Matão-Luiz Marchesan, com o
-              intuito de facilitar a busca por eventos e festas de uma maneira
-              muito mais facil e pratica
+          </div>
+          <!-- Perfil -->
+          <div class="icone perfil text-center">
+            <a href="../Login/login.html"
+              ><i class="bi bi-person-circle icon-sidebar icone-perfil"> </i
+            ></a>
+            <p class="d-md-block d-xl-block d-sm-none d-none">
+              <a href="../Login/login.html" class="login">Login</a>
             </p>
           </div>
-          <div class="col">
-            <img src="./img/LogoBranco.png" class="logo" alt="" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="card">
+          <div class="Logo">
+            <a href="../Home/index.html">
+              <img src="./Img/logoPreto.png" alt="EventPlan" class="login-logo"
+            /></a>
           </div>
-          <div class="col d-flex flex-column">
-            <h4>Ajuda</h4>
-            <a href="#">Central de ajuda</a>
-            <a href="#">Compradores e participantes</a>
-            <a href="#">Produtores de eventos</a>
-          </div>
-        </section>
-        <section>
-          <div class="titulo-contato">
-          <p>Contatos</p>
-          </div>
-          <div class="contatos">
-            <i class="bi bi-facebook p-1"></i>
-            <i class="bi bi-linkedin p-1"></i>
-            <i class="bi bi-twitter p-1"></i>
-            <i class="bi bi-instagram p-1"></i>
-          </div>
-        </section>
-      </footer>
-      <!-- jsbootstrap -->
-    <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-    crossorigin="anonymous"
-  ></script>
-  <!-- js proprio -->
-  <script src="./script/script.js"></script>
-</body>
-</html>
+          <ul></ul>
 
+          <div id="msgError"></div>
+          <div id="msgSuccess"></div>
+
+          <div class="label-float">
+            <input type="text" id="email" placeholder=" " required />
+            <label id="labelEmail" for="email">Email</label>
+          </div>
+
+          <div class="label-float">
+            <input type="password" id="senha" placeholder=" " required />
+            <label id="labelSenha" for="senha">Senha</label>
+            <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+            <a class="Esqueceu" href="#" tabindex="0">Esqueceu a senha?</a>
+          </div>
+          <div class="justify-center">
+            <a href="../Perfil/Perfil.html">
+              <button class="botao-login">Login</button>
+            </a>
+          </div>
+
+          <div class="justify-center">
+            <a href="../cadastro/cadastro.html"
+              ><button class="botao-cadastro">Cadastre-se</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-center container-fluid">
+      <section class="row">
+        <div class="col">
+          <h4>Sobre nós</h4>
+          <p>
+            Nosso site EventPlan, surgiu de um trabalho interdiciplinar
+            elaborado por estudantes da Fatec Matão-Luiz Marchesan, com o
+            intuito de facilitar a busca por eventos e festas de uma maneira
+            muito mais facil e pratica
+          </p>
+        </div>
+        <div class="col">
+          <img src="./img/LogoBranco.png" class="logo" alt="" />
+        </div>
+        <div class="col d-flex flex-column">
+          <h4>Ajuda</h4>
+          <a href="#">Central de ajuda</a>
+          <a href="#">Compradores e participantes</a>
+          <a href="#">Produtores de eventos</a>
+        </div>
+      </section>
+      <section>
+        <div class="titulo-contato">
+          <p>Contatos</p>
+        </div>
+        <div class="contatos">
+          <i class="bi bi-facebook p-1"></i>
+          <i class="bi bi-linkedin p-1"></i>
+          <i class="bi bi-twitter p-1"></i>
+          <i class="bi bi-instagram p-1"></i>
+        </div>
+      </section>
+    </footer>
+    <!-- jsbootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js proprio -->
+    <script src="./script/script.js"></script>
+  </body>
+</html>

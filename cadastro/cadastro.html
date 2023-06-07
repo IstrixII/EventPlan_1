@@ -22,76 +22,101 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <!-- Logo -->
-        <div class="icone">
-          <a class="navbar-brand" href="../Home/index.html">
-            <img
-              src="./img/bitmap.svg"
-              class="logo"
-              alt="Logo"
-              width="220"
-              height="51"
-            />
-          </a>
+      <nav class="navbar d-flex">
+        <!-- offcanvas -->
+        <div class="d-flex offcanvas-logo">
+          <div class="sidebar-botao">
+            <button
+              class="btn btn-outline-secondary h-100 d-inline-block sidebar-botao"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
+          <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+              <h5
+                class="offcanvas-title"
+                id="offcanvasWithBothOptionsLabel"
+              ></h5>
+            </div>
+            <div class="offcanvas-body">
+              <div class="darkmode-button">
+                <!-- darkmode -->
+                <div class="form-check form-switch">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="checkbox"
+                    onclick="setDarkMode()"
+                  />
+                  <label for="checkbox" class="form-check-label"
+                    ><i class="bi bi-moon"></i
+                  ></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Logo -->
+          <div class="icone">
+            <a class="navbar-brand" href="../Login/login.html">
+              <img
+                src="./img/LogoBranco.png"
+                class="logo"
+                alt="Logo"
+                width="176"
+                height="41"
+              />
+            </a>
+          </div>
         </div>
         <!-- Pesquisa -->
-        <form class="d-flex" role="search">
-          <div class="d-none d-sm-block form-pesquisa">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Pesquisar"
-              aria-label="Search"
-            />
+        <div class="d-flex pesquisa-perfil">
+          <div class="pesquisa-nav">
+            <div class="search-box">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Pesquise Aqui"
+              />
+              <a class="search-btn" href="#">
+                <!-- Seach Icon -->
+                <i class="bi bi-search"></i>
+              </a>
+            </div>
           </div>
-          <button
-            class="btn btn-outline-secondary d-flex botao-pesquisa"
-            type="submit"
-          >
-            <i class="bi bi-search"></i>
-          </button>
-        </form>
-        <!-- Perfil -->
-        <div class="icone text-center">
-          <a href="../Login/login.html"><i class="bi bi-person-circle icon-sidebar icone-perfil">
-            </i></a
-            >
-          <p class="d-md-block d-xl-block d-sm-none d-none"><a href="../Login/login.html" class="login">Login</a></p>
-        </div>
-        <!-- Configs -->
-        <div class="dropdown config">
-          <button
-            class="btn btn-outline-secondary dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <i class="bi bi-gear-fill"></i>
-          </button>
-          <ul class="dropdown-menu">
-            <li>
-              <div class="form-check form-switch">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="checkbox"
-                  onclick="setDarkMode()"
-                />
-                <label for="checkbox" class="form-check-label"
-                  ><i class="bi bi-moon"></i
-                ></label>
-              </div>
-            </li>
-          </ul>
+          <!-- Perfil -->
+          <div class="icone perfil text-center">
+            <a href="../Login/login.html"
+              ><i class="bi bi-person-circle icon-sidebar icone-perfil"> </i
+            ></a>
+            <p class="d-md-block d-xl-block d-sm-none d-none">
+              <a href="../Login/login.html" class="login">Login</a>
+            </p>
+          </div>
         </div>
       </nav>
     </header>
       <main>
          <div class='container'>
              <div class='card'>
-                <div class="Logo">
-                <img src="img/EventPlan.png" alt="EventPlan">
+                <div class="logoCadastro">
+                <img src="./img/logoPreto.png" alt="EventPlan" class="logoPreto">
              </div>
                <ul>
          </ul>
@@ -137,6 +162,39 @@
             </div>
             </div>
       </main>
+      <footer class="text-center container-fluid">
+        <section class="row">
+          <div class="col">
+            <h4>Sobre nós</h4>
+            <p>
+              Nosso site EventPlan, surgiu de um trabalho interdiciplinar
+              elaborado por estudantes da Fatec Matão-Luiz Marchesan, com o
+              intuito de facilitar a busca por eventos e festas de uma maneira
+              muito mais facil e pratica
+            </p>
+          </div>
+          <div class="col">
+            <img src="./img/LogoBranco.png" class="logo" alt="" />
+          </div>
+          <div class="col d-flex flex-column">
+            <h4>Ajuda</h4>
+            <a href="#">Central de ajuda</a>
+            <a href="#">Compradores e participantes</a>
+            <a href="#">Produtores de eventos</a>
+          </div>
+        </section>
+        <section>
+          <div class="titulo-contato">
+          <p>Contatos</p>
+          </div>
+          <div class="contatos">
+            <i class="bi bi-facebook p-1"></i>
+            <i class="bi bi-linkedin p-1"></i>
+            <i class="bi bi-twitter p-1"></i>
+            <i class="bi bi-instagram p-1"></i>
+          </div>
+        </section>
+      </footer>
             <!-- jsbootstrap -->
     <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
