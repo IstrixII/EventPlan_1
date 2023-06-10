@@ -96,13 +96,10 @@
   padding-left: 2rem;
 }
 
-header {
-  height: 70px;
-}
 
 nav {
   background-color: #0d0013;
-  margin-bottom: 10px;
+  height: 70px;
 }
 
 .perfil {
@@ -181,7 +178,6 @@ main{
   width: 100%;
 }
 
-/* css home */
 .cards-home {
   margin-left: 150px;
   margin-top: 60px;
@@ -213,6 +209,10 @@ main{
   color: #000000;
 }
 
+.evento a{
+  color: #000;
+}
+
 /* css footer */
 footer {
   background-color: #0d0013;
@@ -229,7 +229,7 @@ footer {
   text-decoration: none;
 }
 
-a:visited {
+footer a:visited {
   color: azure;
 }
 

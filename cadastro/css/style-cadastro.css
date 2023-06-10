@@ -94,13 +94,9 @@
   padding-left: 2rem;
 }
 
-header {
-  height: 70px;
-}
-
 nav {
   background-color: #0d0013;
-  margin-bottom: 10px;
+  height: 70px;
 }
 
 .perfil {
