@@ -1,8 +1,8 @@
 footer {
-  background-color: rgba(75, 0, 130, 0.5);
+  background-color: #0d0013;
   width: 100%;
-  padding: 30px;
-
+  padding: 10px;
+  margin-top: 10px;
 }
 
 .logo {
@@ -13,11 +13,37 @@ footer {
   text-decoration: none;
 }
 
-
-a:visited {
-  color:#212529;
+footer a:visited {
+  color: azure;
 }
 
-footer a{
-  color: #212529;
+.contatos i {
+  font-size: 2rem;
+}
+
+.col h4{
+  font-weight: bold;
+  font-size: 40px;
+  color: aliceblue;
+}
+
+.col p{
+  font-size: 16px;
+  color: rgb(223, 223, 223);
+}
+
+.titulo-contato{
+  font-weight: bold;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.contatos{
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+
+footer {
+  color: #fff
 }
