@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Recuperação de Senha</title>
     <!-- bootstrapcss -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <!-- css próprio -->
-    <link rel="stylesheet" href="./css/style-login.css" />
+    <link rel="stylesheet" href="./css/style-RecSenha.css" />
     <!-- Icons bootstrap -->
     <link
       rel="stylesheet"
@@ -132,19 +132,19 @@
 
           <div class="label-float">
             <input type="password" id="senha" placeholder=" " required />
-            <label id="labelSenha" for="senha">Senha</label>
+            <label id="labelSenha" for="senha">Nova senha</label>
             <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
-            <a class="Esqueceu" href="../RecuperarSenha/RecSenha.html" tabindex="0">Esqueceu a senha?</a>
           </div>
-          <div class="justify-center">
-            <a href="../Perfil/Perfil.html">
-              <button class="botao-login">Login</button>
-            </a>
+
+          <div class="label-float">
+            <input type="password" id="senha" placeholder=" " required />
+            <label id="labelSenha" for="senha">Confirmar senha</label>
+            <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
           </div>
 
           <div class="justify-center">
-            <a href="../cadastro/cadastro.html"
-              ><button class="botao-cadastro">Cadastre-se</button>
+            <a href="../Login/login.html">
+              <button class="botao-confirmar">Confirmar</button>
             </a>
           </div>
         </div>
